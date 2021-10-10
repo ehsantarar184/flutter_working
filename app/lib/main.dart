@@ -25,12 +25,16 @@ class MyApp extends StatelessWidget {
               ),
             ),
             body: Center(
-              child: RaisedButton(
+
+
+
+              child: MaterialButton(
                 padding: const EdgeInsets.all(10.0),
                 // highlightColor: Colors.greenAccent,
                 // splashColor: Colors.cyan,
                 elevation: 10.0,
-                shape: Border.all(width: 2.0,color: Colors.black),
+                // shape: Border.all(width: 2.0,color: Colors.black),
+                color: Colors.red[250],
                 onPressed: (){},
                 child: const Text(
                   "Button",
@@ -38,7 +42,24 @@ class MyApp extends StatelessWidget {
                       fontSize: 30.0
                   ),
                 ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0)
+                )
               ),
+              // child: RaisedButton(
+              //   padding: const EdgeInsets.all(10.0),
+              //   // highlightColor: Colors.greenAccent,
+              //   // splashColor: Colors.cyan,
+              //   elevation: 10.0,
+              //   shape: Border.all(width: 2.0,color: Colors.black),
+              //   onPressed: (){},
+              //   child: const Text(
+              //     "Button",
+              //     style: TextStyle(
+              //         fontSize: 30.0
+              //     ),
+              //   ),
+              // ),
         )
     ),
     );
