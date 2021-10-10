@@ -27,8 +27,10 @@ class MyApp extends StatelessWidget {
             body: Center(
               child: RaisedButton(
                 padding: const EdgeInsets.all(10.0),
-                highlightColor: Colors.greenAccent,
-                splashColor: Colors.cyan,
+                // highlightColor: Colors.greenAccent,
+                // splashColor: Colors.cyan,
+                elevation: 10.0,
+                shape: Border.all(width: 2.0,color: Colors.black),
                 onPressed: (){},
                 child: const Text(
                   "Button",
